@@ -1,5 +1,5 @@
+import SocialNetworks from '../SocialNetworks/SocialNetworks'
 import './Header.css'
-
 import { ReactTyped } from 'react-typed'
 
 const Header = () => {
@@ -15,10 +15,17 @@ const Header = () => {
             backSpeed={50} 
             style = {{color: '#0B9C95'}}           
             loop >
-        </ReactTyped>
-        </div>                           
+        </ReactTyped>          
+        </div>      
+        <div className='social-networks-container'>
+          <SocialNetworks />
         </div> 
+                                    
+        </div>        
+    
+     
     </div>
+    
   )
 }
 
