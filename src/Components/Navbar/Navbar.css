@@ -14,17 +14,18 @@
     margin-bottom: 0.8rem;
     padding-bottom: 1rem;
     /* position: absolute; */
+    background-color: rgb(11, 156, 149);
     color: white;  
     gap: 2rem;  
+    width: fit-content;
+    padding: 0.8rem;
+    border-radius: 50px;;
+    justify-content: center;
+    text-align: center;
 }
-.navbar-container ul li  {
-width: fit-content;
-background-color: rgb(11, 156, 149);
-padding: 0.8rem;
-border-radius: 50px;;
-align-items: center;
-justify-content: center;
-text-align: center;
+.navbar-container ul li:hover  {
+    background-color:rgb(6, 117, 112) ;
+    transition: 0.5s;
 }
 
 .navbar-container ul li span{
@@ -57,4 +58,12 @@ text-align: center;
     /* background-color:rgb(11, 156, 149) ;     */
   }
 
+  /* MEDIA QUERIES */
+
+  @media screen and (max-width: 925px){
+    .navbar-container{
+        display: none;
+    }
+    
+  } 
 
