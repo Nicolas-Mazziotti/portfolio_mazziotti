@@ -1,7 +1,7 @@
 
 .header-container{
     position: relative;
-    background-image: url(/public/assets/header_background2.jpg);
+    background-image: url(/assets/header_background2.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgba(2, 2, 2, 0.5);

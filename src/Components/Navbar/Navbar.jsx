@@ -1,9 +1,13 @@
-import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon, Bars3Icon } from '@heroicons/react/24/outline'
 import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='navbar-container'>
+    <>
+    <div className='container-menu-icon'>
+      <Bars3Icon/>
+      </div> 
+    <div className='navbar-container'>         
            <ul>
         <li>
           <UserIcon className="navbar-icons"/>
@@ -23,6 +27,7 @@ const Navbar = () => {
         </li>
       </ul>
  </div>
+ </>
       
 
    

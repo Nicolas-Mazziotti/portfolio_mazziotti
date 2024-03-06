@@ -32,16 +32,7 @@
     margin-right: 0.3rem;
     }
 
-/* .navbar-container ul li svg:hover {
-    background-color: rgb(8, 110, 105);
-    transition: 0.2s;
-    } */
 
-/* .navbar-container ul li span:hover {  
-    color: white;
-    font-weight: 500;
-    transition: 2s;
-} */
 .navbar-icons {
     width: 40px;
 }
@@ -58,12 +49,28 @@
     /* background-color:rgb(11, 156, 149) ;     */
   }
 
+
+  .container-menu-icon{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    display: none;
+    margin: 1rem;
+  }
+  .container-menu-icon svg {
+    color: white;
+    width: 40px;
+  }
+
   /* MEDIA QUERIES */
 
   @media screen and (max-width: 925px){
-    .navbar-container{
+    .navbar-container ul{
         display: none;
     }
-    
+    .container-menu-icon{
+        display:block;
+      }
+
   } 
 
