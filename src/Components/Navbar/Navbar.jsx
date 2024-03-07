@@ -3,7 +3,7 @@ import './Navbar.css'
 import { useState } from 'react'
 
 const Navbar = () => {
-  let [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -16,7 +16,7 @@ const Navbar = () => {
       
       
       </div> 
-      <div className={`navbar-container ${isOpen ? 'open' : ''}`}>             
+      <div className={`navbar-container ${isOpen ? 'open' : 'close'}`}>             
            <ul>
               <li>
                 <UserIcon className="navbar-icons"/>

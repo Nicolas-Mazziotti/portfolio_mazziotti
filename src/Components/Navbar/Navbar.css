@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 2;
     margin:1rem;
-    margin-top:9rem;
+    margin-top:9rem;   
 }
 
 .navbar-container ul li {
@@ -62,23 +62,34 @@
     color: white;
     width: 40px;
   }
-
-  .navbar-container.open {
-    display: block; /* Muestra el menú cuando está activo */  
-}
-
   /* MEDIA QUERIES */
 
   @media screen and (max-width: 925px){
     .navbar-container {
         position: absolute;
-        display: none;
-        background-color: white;
-        width: 50vh;
+        /* display: none; */
+        transform: translateX(-120%);
+        background-color: rgb(248, 247, 247);        
         height: 80vh;
         margin-top: 6rem;
         padding: 2rem;
     }
+    .navbar-container.open {
+        display: block;
+        width: 42vh; 
+        margin-left: 0;
+        border-radius: 10px;
+        transform: translateX(0%);
+        transition: transform 1s ease;    
+    }
+    .navbar-container.close {
+        width: 42vh; 
+        margin-left: 0;
+        border-radius: 10px;
+        transform: translateX(-120%);
+        transition: transform 0.5s ease-out;    
+    }
+
     .container-menu-icon{
         display:block;
       }
