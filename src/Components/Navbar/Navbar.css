@@ -56,21 +56,38 @@
     z-index: 2;
     display: none;
     margin: 1rem;
+    cursor: pointer;
   }
-  .container-menu-icon svg {
+  .container-menu-icon{
     color: white;
     width: 40px;
   }
 
+  .navbar-container.open {
+    display: block; /* Muestra el menú cuando está activo */  
+}
+
   /* MEDIA QUERIES */
 
   @media screen and (max-width: 925px){
-    .navbar-container ul{
+    .navbar-container {
+        position: absolute;
         display: none;
+        background-color: white;
+        width: 50vh;
+        height: 80vh;
+        margin-top: 6rem;
+        padding: 2rem;
     }
     .container-menu-icon{
         display:block;
       }
 
+      .hidden-span {
+        display: block;       
+      }      
+      .navbar-container ul li{
+        width: 100%;
+      }   
   } 
 
