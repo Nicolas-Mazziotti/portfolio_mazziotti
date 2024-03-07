@@ -73,6 +73,9 @@
     .header-container h1{
         font-size: 54px;
     }
+    .header-container.menu-open {
+        animation: none; /* Detener la animación */
+      }
 }
 
  @media screen and (max-width: 480px){
@@ -82,4 +85,7 @@
     .header-subtitle-container{
         font-size: 18x;
     }
+    .header-container.menu-open {
+        animation: none; /* Detener la animación */
+      }
 }

@@ -1,22 +1,23 @@
 import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import './Navbar.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+// eslint-disable-next-line react/prop-types
+const Navbar = ({toggleMenu, menuOpen}) => {
+  // const [isOpen, setIsOpen] = useState(false)
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <>
     <div onClick={toggleMenu}className='container-menu-icon'>
       {
-        isOpen ? <XMarkIcon/> :  <Bars3Icon/> 
+        menuOpen ? <XMarkIcon/> :  <Bars3Icon/> 
       }
       
       
       </div> 
-      <div className={`navbar-container ${isOpen ? 'open' : 'close'}`}>             
+      <div className={`navbar-container ${menuOpen ? 'open' : 'close'}`}>             
            <ul>
               <li>
                 <UserIcon className="navbar-icons"/>
