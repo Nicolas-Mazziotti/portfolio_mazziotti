@@ -2,7 +2,8 @@
     position: absolute;
     z-index: 2;
     margin:1rem;
-    margin-top:9rem;   
+    margin-top:9rem; 
+    /* position: sticky;   */
 }
 
 .navbar-container ul li {

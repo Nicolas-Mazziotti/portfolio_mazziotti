@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar"
 import Header from "./Components/Header/Header"
 import About from "./Components/About/About";
+import Skills from "./Components/Skills/Skills";
 import Spinner from "./Components/Spinner/Spinner";
 
 import './App.css'
@@ -29,17 +30,17 @@ function App() {
   return (
     <div id='app'>
         <>
-    {loading ? (<Spinner/>) : (
-      <>
-      <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen}/>
-      <Header menuOpen={menuOpen}/>
-      <About/>            
-      </>
-      )}
-    </>
-
+          {loading ? (<Spinner/>) : (
+            <>
+            <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen}/>
+            <Header menuOpen={menuOpen}/>
+            <About/>
+            <Skills/>            
+            </>
+            )}
+        </>
     </div>
       )
-}
+  }
 
 export default App

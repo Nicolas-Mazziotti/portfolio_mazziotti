@@ -1,7 +1,38 @@
 .about-container{
-    background-color: white;
+    background-color: black;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
 }
 
 .about-container h1 {
-    font-size: 50px;
+    color: white;
+    font-size: 54px;
+}
+
+.about-container p {
+    color: white;
+    font-size: 18px;
+    margin-top: 4.5rem;
+}
+
+.about-title-container div{    
+    width: 10%;
+    background-color: rgb(11, 156, 149);
+    height: 2px;
+}
+
+@media screen and (max-width: 480px){
+        .about-container h1{
+            font-size: 32px;
+        }
+        .about-container p {
+            font-size: 15px;
+        }
+        .about-title-container div{    
+            width: 20%;
+        }
+
 }
