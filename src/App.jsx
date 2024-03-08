@@ -21,7 +21,7 @@ function App() {
     // Simular tiempo de carga
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 segundos de carga simulada
+    }, 2000); // 3 segundos de carga simulada
 
     // Limpiar el temporizador cuando se desmonte el componente
     return () => clearTimeout(timer);
