@@ -4,10 +4,6 @@ import './Navbar.css'
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({toggleMenu, menuOpen}) => {
-  // const [isOpen, setIsOpen] = useState(false)
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
   return (
     <>
     <div onClick={toggleMenu}className='container-menu-icon'>

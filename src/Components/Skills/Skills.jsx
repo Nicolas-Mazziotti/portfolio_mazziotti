@@ -12,8 +12,8 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <div className="skills-title-container">
-        <h1 data-aos="fade-up">Skills</h1>
-        <div data-aos="fade-up"></div>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Skills</h1>
+        <div data-aos="fade-up" data-aos-duration="1000"></div>
       </div>
       <div className="skills-icons" data-aos="fade-up">
         <div className="skills-icon-container">

@@ -11,10 +11,10 @@ const About = () => {
   return (
     <div className="about-container">
       <div className='about-title-container'>
-        <h1 data-aos="fade-up">About</h1>
-        <div data-aos="fade-up"></div>
+        <h1 data-aos="fade-up"  data-aos-duration="1000">About Me</h1>
+        <div data-aos="fade-up"  data-aos-duration="1000"></div>
       </div>
-      <p data-aos="fade-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt similique, maxime magni aperiam sed, necessitatibus perferendis maiores aut, voluptas officiis accusantium velit. Ipsa impedit aspernatur ipsam sint elig
+      <p data-aos="fade-up"  data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt similique, maxime magni aperiam sed, necessitatibus perferendis maiores aut, voluptas officiis accusantium velit. Ipsa impedit aspernatur ipsam sint elig
         endi ab? Ad rerum debitis dolor fuga dolorem numquam amet expedita cum.</p>
       </div>
   )

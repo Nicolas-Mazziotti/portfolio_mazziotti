@@ -3,8 +3,9 @@
     padding: 4rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: left;
-
+    height: 90vh;
 }
 
 .about-container h1 {
@@ -25,6 +26,9 @@
 }
 
 @media screen and (max-width: 480px){
+        .about-container{
+            height: fit-content;
+        }
         .about-container h1{
             font-size: 32px;
         }
