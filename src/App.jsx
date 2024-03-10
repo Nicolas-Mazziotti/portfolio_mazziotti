@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar/Navbar"
 import Header from "./Components/Header/Header"
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Contact from "./Components/Contact/Contact";
 import Spinner from "./Components/Spinner/Spinner";
 
 import './App.css'
@@ -35,7 +37,9 @@ function App() {
             <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen}/>
             <Header menuOpen={menuOpen}/>
             <About/>
-            <Skills/>            
+            <Skills/> 
+            <Portfolio/>
+            <Contact/>           
             </>
             )}
         </>

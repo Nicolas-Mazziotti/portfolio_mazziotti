@@ -1,0 +1,28 @@
+.portfolio-container{
+    /* background-color: black; */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.portfolio-title-container h1 {
+    color: white;
+    font-size: 54px;
+}
+
+.portfolio-title-container div{    
+    width: 10%;
+    background-color: rgb(11, 156, 149);
+    height: 2px;
+}
+
+@media screen and (max-width: 480px){
+    .portfolio-container h1{
+        font-size: 32px;
+    }
+    .portfolio-title-container div{    
+        width: 20%;
+    }
+
+}
