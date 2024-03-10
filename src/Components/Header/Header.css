@@ -1,10 +1,10 @@
 
 .header-container{
     position: relative;
-    background-image: url(/assets/header_background2.jpg);
+    background-image: url(/assets/header_background6.jpg);
     background-size: cover;
-    background-position: center;
-    background-color: rgba(2, 2, 2, 0.5);
+    background-position:20% 80%;
+    background-color: rgba(0, 0, 0, 0.5);
     color:white;
     opacity: 0.9;
     z-index: 1;
@@ -14,6 +14,16 @@
     flex-direction: column;
     justify-content: center; /* Centrar vertical y horizontalmente el texto */
     align-items: center;   
+}
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.85); /* Cambia el color de fondo aquí */
+    z-index: -1;
 }
 
 
@@ -92,8 +102,18 @@
         animation: none; /* Detener la animación */
       }
 }
+@media screen and (max-width: 650px){
+    .header-container{
+        background-position: 60% 80%;
+        background-size:cover;
+    }
+}
 
  @media screen and (max-width: 480px){
+    .header-container{
+        background-position: 60% 80%;
+        background-size:cover;
+    }
     .header-container h1{
             font-size: 32px;
         }
@@ -103,4 +123,5 @@
     .header-container.menu-open {
         animation: none; /* Detener la animación */
       }
+      
 }
