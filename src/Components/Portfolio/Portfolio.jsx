@@ -9,7 +9,7 @@ const Portfolio = () => {
     
     {
       id: 1,
-      title: "XiCelulares ecommerce",
+      title: "XiCelulares Ecommerce",
       subtitle: "REACT | FIREBASE",
       url: "https://nicolas-mazziotti.github.io/xicelulares-Mazziotti/",
       img: portfolio_celulares,
@@ -23,14 +23,14 @@ const Portfolio = () => {
     },
     {
         id: 3,
-        title: "Crud Grill quoter",
+        title: "Crud Grill Quoter | Freelance",
         subtitle: "HTML | CSS | JS | PHP | MYSQL",
         url: "https://nicolas-mazziotti.github.io/getApi/",
         img: portfolio_richard,
       },
       {
         id: 4,
-        title: "GlitterArt freelance",
+        title: "GlitterArt | Freelance",
         subtitle: "HTML | CSS | BOOTSTRAP | JS",
         url: "https://glitterart.es/",
         img: portfolio_glitter,
@@ -39,12 +39,11 @@ const Portfolio = () => {
   ];
   return (
     <div className="portfolio-container">
-      <div
-        className="portfolio-title-container" data-aos="fade-up" data-aos-duration="1000">
+      <div className="portfolio-title-container" data-aos="fade-up" data-aos-duration="1000">
         <h1>PORTFOLIO</h1>
         <div data-aos="fade-up" data-aos-duration="1000"></div>
       </div>
-      <div className="cards-container" >
+      <div className="cards-container">
         {cards.map((card) => {
           return (
             console.log(card.img),
