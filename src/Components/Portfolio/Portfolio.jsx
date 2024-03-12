@@ -1,14 +1,64 @@
-import './Portfolio.css'
+import "./Portfolio.css";
+import portfolio_glitter from "/assets/portfolio_glitter.jpg"
+import portfolio_celulares from "/assets/portfolio_celulares.jpg"
+import portfolio_characters from "/assets/portfolio_characters.jpg"
 
 const Portfolio = () => {
+  const cards = [
+    {
+      id: 1,
+      title: "GlitterArt freelance",
+      subtitle: "HTML | CSS | BOOTSTRAP | JS",
+      url: "https://glitterart.es/",
+      img: portfolio_glitter,
+      alt: "glitterart",
+    },
+    {
+      id: 2,
+      title: "XiCelulares ecommerce",
+      subtitle: "REACT | FIREBASE",
+      url: "https://nicolas-mazziotti.github.io/xicelulares-Mazziotti/",
+      img: portfolio_celulares,
+    },
+    {
+      id: 3,
+      title: "Rick and Morty Characters",
+      subtitle: "HTML | CSS | JS",
+      url: "https://nicolas-mazziotti.github.io/getApi/",
+      img: portfolio_characters,
+    },
+  ];
   return (
-    <div className='portfolio-container'>
-        <div className='portfolio-title-container' data-aos="fade-up" data-aos-duration="1000"> 
-            <h1>PORTFOLIO</h1>
-            <div data-aos="fade-up" data-aos-duration="1000"></div>
-        </div>
+    <div className="portfolio-container">
+      <div
+        className="portfolio-title-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h1>PORTFOLIO</h1>
+        <div data-aos="fade-up" data-aos-duration="1000"></div>
+      </div>
+      <div className="cards-container" >
+        {cards.map((card) => {
+          return (
+            console.log(card.img),
+            (
+              <div className="card" key={card.id} data-aos="fade-up" data-aos-duration="1000">
+                <div className="card-image-container">
+                  <img src={card.img} alt={card.alt} />
+                </div>
+                <div className="card-content">
+                  <h2 className="card-title">{card.title}</h2>
+                  <p>{card.subtitle}</p>
+                  <a href="">Live demo</a>
+                </div>
+              </div>
+            )
+          );
+        })}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
