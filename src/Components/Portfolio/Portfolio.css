@@ -66,15 +66,30 @@
     font-size: 12px ;
 }
 
+.card-content a {
+    background-color: rgb(6, 117, 112);
+    color: white;
+    font-weight: 500;
+    padding: 0.3rem;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.card-content-buttons {
+    text-align: end;
+}
+
 .card-title{
     font-weight: 600;
 }
+
 
 @media screen and (max-width: 480px){
     .portfolio-container h1{
         font-size: 32px;
     }
-    .portfolio-title-container div{    
+    .portfolio-title-container div
+    {    
         width: 20%;
     }
 }
