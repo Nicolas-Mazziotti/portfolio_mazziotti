@@ -37,12 +37,16 @@ const Contact = () => {
                         <input type="text" name="" id="input_name" /> 
                     </div>
                      <div className='form-control'>
-                        <label htmlFor="name">Email:</label>
-                        <input type="text" name="" id="input_name" />
+                        <label htmlFor="name" className='label-email'>Email:</label>
+                        <input type="text" name="" id="input_email" />
                      </div>
                      <div className='form-control'>
-                        <label htmlFor="name">Message:</label>
-                        <input type="text" name="" id="input_name" />
+                         <label htmlFor="name" className='label-message'>Message:</label>
+                         <textarea name="" id="input_message" cols="30" rows="10"></textarea>                        
+                        {/* <input type="text" name="" id="input_message" /> */}
+                     </div>
+                     <div className='contact-btn-container'>
+                        <button>Send message</button>
                      </div>                                        
                 </form>
             </div>
