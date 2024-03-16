@@ -3,10 +3,13 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <div className='contact-container'>            
+        <div className='contact-container'>
+            <div>
             <h1 data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
             <div className='contact-title-underline' data-aos="fade-up" data-aos-duration="1000"></div>
-            <div className='contact-formIcon-container'>
+                </div>            
+            
+            <div className='contact-formIcon-container' data-aos="fade-up" data-aos-duration="1000">
             <div className='contact-icons-container'>
                 <div className='contact-icons-details'>
                 <MapPinIcon/>
