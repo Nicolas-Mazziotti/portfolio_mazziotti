@@ -64,6 +64,7 @@
     gap: 5rem ;
 }
 
+
 .form-control {
     color: white;
     display: flex;
@@ -139,22 +140,30 @@
     .contact-container{
         padding: 2rem;
     }
-    .form-control input {
-        width: 100%;
+    .form-control input, .form-control textarea, .contact-form-container button {
+        width: -webkit-fill-available !important;
     }
+    .contact-form-container{
+        width:  -webkit-fill-available !important;
+    }    
 }
 
 @media screen and (max-width:800px) {
     .contact-container{
         margin-top: 15rem;
+        
     }
     .contact-formIcon-container {
-        flex-wrap: wrap;
-        margin-top: 6rem;
-
+        flex-wrap: wrap;       
     }
+    .contact-form-container, .form-control input, .form-control textarea, .contact-form-container button{
+        width: 70vh;
+    }    
     .contact-container .contact-title-underline
     {    
         width: 20%;
+    }
+    .contact-form-container{
+        margin-bottom: 2rem;
     }
 }
