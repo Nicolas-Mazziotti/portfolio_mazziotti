@@ -123,4 +123,9 @@
     .portfolio-title-container{
         padding: 2rem;
     }
+    .card-content .icon-card svg {
+        margin: auto;
+        width: 3vh;
+        height: 3.5vh;
+    }
 }
