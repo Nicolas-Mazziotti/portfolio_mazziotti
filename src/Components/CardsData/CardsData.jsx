@@ -10,21 +10,26 @@ export const cards = [
       title: "XiCelulares Ecommerce",
       subtitle: "REACT | FIREBASE",
       url: "https://nicolas-mazziotti.github.io/xicelulares-Mazziotti/",
+      github:"https://github.com/Nicolas-Mazziotti/xicelulares-Mazziotti",
       img: portfolio_celulares,
+      className: 'icon'
     },
     {
       id: 2,
       title: "Rick and Morty Characters",
       subtitle: "HTML | CSS | JS",
       url: "https://nicolas-mazziotti.github.io/getApi/",
+      github: "https://github.com/Nicolas-Mazziotti/getApi",
       img: portfolio_characters,
+      className: 'icon'
     },
     {
         id: 3,
         title: "Crud Grill Quoter | Freelance",
         subtitle: "HTML | CSS | JS | PHP | MYSQL",
-        url: "https://nicolas-mazziotti.github.io/getApi/",
+        url: "",
         img: portfolio_richard,
+        className: 'without-icon'
       },
       {
         id: 4,
@@ -33,5 +38,6 @@ export const cards = [
         url: "https://glitterart.es/",
         img: portfolio_glitter,
         alt: "glitterart",
+        className: 'without-icon'
       },
   ];

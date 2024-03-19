@@ -1,7 +1,20 @@
 import "./Portfolio.css";
 import { cards } from "../CardsData/CardsData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio = () => {
+
+  // const [icon, setIcon] = useState(true)
+
+  // const handleIcon = (className) => {
+  //   if (className != 'without-icon'){
+  //     setIcon(true)
+  //   }else{
+  //     setIcon(false)
+  //   }
+  // }
+
 
   return (
     <div className="portfolio-container" id="portfolio">
@@ -21,8 +34,11 @@ const Portfolio = () => {
                 <div className="card-content">
                   <h2 className="card-title">{card.title}</h2>
                   <p>{card.subtitle}</p>
-                  <div className="card-content-buttons">                    
-                    <a href="">Live demo</a>
+                  <div className="card-content-buttons"> 
+                  {card.className !== 'without-icon' ? (
+                    <a href={card.github} className="icon-card without-github"><FontAwesomeIcon icon={faGithub}/></a>
+                  ) : null}                    
+                    <a href={card.url} className="btn-card">Live demo</a>
                   </div>
                 </div>
               </div>

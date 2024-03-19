@@ -70,7 +70,7 @@
     font-size: 12px ;
 }
 
-.card-content a {
+.card-content .btn-card {
     background-color: rgb(6, 117, 112);
     color: white;
     font-weight: 500;
@@ -80,7 +80,28 @@
 }
 
 .card-content-buttons {
-    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 0.4rem;
+}
+.card-content .icon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(46, 45, 45); */
+    color: black;
+    /* padding: 0rem;
+    border-radius: 20px; */
+    /* width:5vh;
+    height: 5vh; */
+}
+.card-content .icon-card svg {
+    margin: auto;
+    width: 4vh;
+    height: 4.5vh;
 }
 
 .card-title{
