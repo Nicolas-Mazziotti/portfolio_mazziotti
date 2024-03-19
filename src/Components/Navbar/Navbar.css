@@ -39,6 +39,10 @@
     width: 40px;
 }
 
+.navbar-container .home-container{
+  display: none;
+}
+
 
 /* Estilo para ocultar el span inicialmente */
 .hidden-span {
@@ -104,6 +108,10 @@
       }      
       .navbar-container ul li{
         width: 100%;
+      }
+      .navbar-container .home-container{
+        display: flex;
+        /* display: block; */
       }   
   } 
 

@@ -9,7 +9,7 @@ const Header = ({menuOpen}) => {
 
   return (
     // <div className="header-container">
-    <div className={`header-container ${menuOpen ? 'menu-open' : ''}`}>
+    <div className={`header-container ${menuOpen ? 'menu-open' : ''}`} id='header'>
        <div className='header-text-container'>
         <h1>Nicolas Mazziotti</h1>
         <div className='header-subtitle-container'>

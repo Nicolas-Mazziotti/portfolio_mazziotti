@@ -1,4 +1,4 @@
-import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon, Bars3Icon, XMarkIcon, HomeIcon } from '@heroicons/react/24/outline'
 import './Navbar.css'
 // import { useState } from 'react'
 
@@ -25,6 +25,10 @@ const Navbar = ({toggleMenu, menuOpen}) => {
       </div> 
       <div className={`navbar-container ${menuOpen ? 'open' : 'close'}`}>             
            <ul>
+           <li className='home-container' onClick={() => scrollToSection("header")}>
+                <HomeIcon className="navbar-icons"/>
+                <span className={'hidden-span'}>Home</span>         
+              </li>
               <li onClick={() => scrollToSection("about")}>
                 <UserIcon className="navbar-icons"/>
                 <span className={'hidden-span'}>About</span>         
