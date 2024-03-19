@@ -8,9 +8,9 @@ import "./Skills.css";
 const Skills = () => {
   useEffect(() => {
     AOS.init();
-  }, []);
+  }, []);  
   return (
-    <div className="skills-container">
+    <div className="skills-container" id="skills">
       <div className="skills-title-container">
         <h1 data-aos="fade-up" data-aos-duration="1000">SKILLS</h1>
         <div data-aos="fade-up" data-aos-duration="1000"></div>

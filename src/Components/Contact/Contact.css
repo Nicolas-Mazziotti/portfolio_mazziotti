@@ -27,7 +27,7 @@
     gap: 4rem;
     width: 70vh;   
 }
-.contact-icons-container svg {
+.contact-icons-container .icon {
     color: white;
     background-color: rgb(11, 156, 149);
     border-radius: 50px;
@@ -35,7 +35,7 @@
     width: 9vh;
     transition: 1s;
 }
-.contact-icons-container svg:hover {
+.contact-icons-container .icon:hover {
     color: white;
     background-color: rgb(6, 117, 112);
     border-radius: 50px;
@@ -121,6 +121,23 @@
     background-color: rgb(11, 156, 149);    
 }
 
+.email-contact-container{
+    display: flex;
+    flex-direction: row;
+
+
+
+    /* color: white;
+    background-color: rgb(11, 156, 149);
+    border-radius: 50px;
+    padding: 0.9rem;
+    width: 9vh;
+    transition: 1s; */
+}
+.email-contact-container svg{
+    width: 20px;
+    margin-left: 0.3rem;
+}
 
 @media screen and (max-width: 300px){
     form {
@@ -145,6 +162,23 @@
     }
     .contact-form-container{
         width:  -webkit-fill-available !important;
+    }
+    .contact-icons-container .icon{
+        width: 7vh;
+        height: 7vh;
+        color: white;
+        background-color: rgb(11, 156, 149);
+        border-radius: 50px;
+        padding: 0.5rem;
+        transition: 1s;
+    }
+    .contact-icons-container .icon:hover {
+        color: white;
+        background-color: rgb(6, 117, 112);
+        border-radius: 50px;
+        padding: 0.5rem;
+        width: 7vh;
+        height: 7vh;
     }    
 }
 

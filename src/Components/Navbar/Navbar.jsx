@@ -4,6 +4,13 @@ import './Navbar.css'
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({toggleMenu, menuOpen}) => {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if(section){
+      section.scrollIntoView({behavior: 'smooth'})
+    }
+  }
   return (
     <>
     <div onClick={toggleMenu}className='container-menu-icon'>
@@ -15,19 +22,19 @@ const Navbar = ({toggleMenu, menuOpen}) => {
       </div> 
       <div className={`navbar-container ${menuOpen ? 'open' : 'close'}`}>             
            <ul>
-              <li>
+              <li onClick={() => scrollToSection("about")}>
                 <UserIcon className="navbar-icons"/>
                 <span className={'hidden-span'}>About</span>         
               </li>
-              <li>
+              <li onClick={() => scrollToSection("skills")}>
                 <CheckCircleIcon className="navbar-icons"/>
                 <span className='hidden-span'>Skills</span>
               </li>
-              <li>
+              <li onClick={() => scrollToSection("portfolio")}>
               <BookOpenIcon className="navbar-icons"/>
                 <span className='hidden-span'>Portfolio</span>
               </li>
-              <li>
+              <li onClick={() => scrollToSection("contact")}>
               <EnvelopeIcon className="navbar-icons"/>
                 <span className='hidden-span'>Contact</span>
               </li>

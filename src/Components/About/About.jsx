@@ -9,7 +9,7 @@ const About = () => {
   }, [])
 
   return (
-    <div className="about-container">
+    <div className="about-container" id='about'>
       <div className='about-title-container'>
         <h1 data-aos="fade-up"  data-aos-duration="1000">ABOUT ME</h1>
         <div data-aos="fade-up"  data-aos-duration="1000"></div>

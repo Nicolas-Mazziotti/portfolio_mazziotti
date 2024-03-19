@@ -1,9 +1,24 @@
-import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react';
+import { MapPinIcon, PhoneIcon, EnvelopeIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline'
 import './Contact.css'
 
 const Contact = () => {
+
+    const [copySuccess, setCopySuccess] = useState(null);
+    const copyToClipBoard = async copyMe => {
+       try {
+           await navigator.clipboard.writeText(copyMe);
+           setCopySuccess('Copied!');    
+           setTimeout(() => {
+            setCopySuccess(null);
+          }, 2000);       
+       } 
+       catch (err) {
+           setCopySuccess('Failed to copy!');
+       }
+    };
     return (
-        <div className='contact-container'>
+        <div className='contact-container' id='contact'>
             <div>
             <h1 data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
             <div className='contact-title-underline' data-aos="fade-up" data-aos-duration="1000"></div>
@@ -12,21 +27,25 @@ const Contact = () => {
             <div className='contact-formIcon-container' data-aos="fade-up" data-aos-duration="1000">
             <div className='contact-icons-container'>
                 <div className='contact-icons-details'>
-                <MapPinIcon/>
+                <MapPinIcon className='icon'/>
                     <div>
                         <h3>Location</h3>
                         <p>Buenos Aires, Argentina</p>
                     </div>
                 </div>
                 <div className='contact-icons-details'>
-                <EnvelopeIcon/>                
+                <EnvelopeIcon className='icon'/>                
                     <div>
                         <h3>Message</h3>
+                        <div className='email-contact-container'>
                         <p>nicolas.mazziotti1@gmail.com</p>
+                        <span onClick={() => copyToClipBoard('nicolas.mazziotti1@gmail.com')}><DocumentDuplicateIcon/></span>
+                        {copySuccess}                                                
+                        </div>                        
                     </div>
                 </div>
                 <div className='contact-icons-details'>
-                <PhoneIcon/>
+                <PhoneIcon className='icon'/>
                     <div>
                         <h3>Phone</h3>
                         <p>+ 54-9-1134184792</p>
@@ -37,7 +56,7 @@ const Contact = () => {
                 <form action="">
                     <div className='form-control'>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" name="" id="input_name" /> 
+                        <input type="text" name="" id="input_name"/> 
                     </div>
                      <div className='form-control'>
                         <label htmlFor="name" className='label-email'>Email:</label>
