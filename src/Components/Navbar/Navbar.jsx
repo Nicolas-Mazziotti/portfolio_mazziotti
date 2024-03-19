@@ -9,6 +9,9 @@ const Navbar = ({toggleMenu, menuOpen}) => {
     const section = document.getElementById(sectionId)
     if(section){
       section.scrollIntoView({behavior: 'smooth'})
+      setTimeout(() => {
+        toggleMenu(); 
+      },1000)              
     }
   }
   return (
