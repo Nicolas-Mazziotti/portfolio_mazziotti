@@ -1,15 +1,19 @@
 
 .header-container{
     position: relative;
-    background-image: url(/assets/header_background4.jpg);
-    background-size: cover;
-    background-position:20% 80%;
+    background-image: url(/assets/header_background11.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position:20% 50%;
+    background-position-x: 350px;
+    /* background-attachment: fixed; */
     background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(120%) contrast(130%);
     color:white;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 1;
     /* height: 650px; */
-    height: 100vh;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrar vertical y horizontalmente el texto */

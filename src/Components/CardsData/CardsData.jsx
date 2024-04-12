@@ -2,6 +2,7 @@ import portfolio_glitter from "/assets/portfolio_glitter.jpg"
 import portfolio_celulares from "/assets/portfolio_celulares.jpg"
 import portfolio_characters from "/assets/portfolio_characters.jpg"
 import portfolio_richard from "/assets/portfolio_richard.jpg"
+import portfolio_solvantech from "/assets/portfolio_solvantech.jpg"
 
 export const cards = [
     
@@ -38,6 +39,15 @@ export const cards = [
         url: "https://glitterart.es/",
         img: portfolio_glitter,
         alt: "glitterart",
+        className: 'without-icon'
+      },
+      {
+        id: 5,
+        title: "Solvantech | Freelance",
+        subtitle: "HTML | CSS | BOOTSTRAP | JS",
+        url: "https://solvantech.com/",
+        img: portfolio_solvantech,
+        alt: "solvantech",
         className: 'without-icon'
       },
   ];
