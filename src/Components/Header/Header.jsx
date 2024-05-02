@@ -1,7 +1,7 @@
 // import { useState } from 'react'
-import SocialNetworks from '../SocialNetworks/SocialNetworks'
-import './Header.css'
-import { ReactTyped } from 'react-typed'
+import SocialNetworks from '../SocialNetworks/SocialNetworks';
+import './Header.css';
+import { ReactTyped } from 'react-typed';
 
 // eslint-disable-next-line react/prop-types
 const Header = ({menuOpen}) => {
@@ -9,7 +9,7 @@ const Header = ({menuOpen}) => {
 
   return (
     // <div className="header-container">
-    <div className={`header-container ${menuOpen ? 'menu-open' : ''}`} id='header'>
+    <div className={`header-container ${menuOpen ? 'menu-open' : ''}`} id='header'>      
        <div className='header-text-container'>
         <h1>Nicolas Mazziotti</h1>
         <div className='header-subtitle-container'>
@@ -26,7 +26,12 @@ const Header = ({menuOpen}) => {
           <SocialNetworks />
         </div> 
                                     
-        </div>        
+        </div> 
+        {/* <div className='header-image-container'>
+          <picture>
+            <img src={imageHeader} alt="" />            
+          </picture>
+        </div> */}
     
      
     </div>

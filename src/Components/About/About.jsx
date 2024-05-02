@@ -14,8 +14,7 @@ const About = () => {
         <h1 data-aos="fade-up"  data-aos-duration="1000">ABOUT ME</h1>
         <div data-aos="fade-up"  data-aos-duration="1000"></div>
       </div>
-      <p data-aos="fade-up"  data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt similique, maxime magni aperiam sed, necessitatibus perferendis maiores aut, voluptas officiis accusantium velit. Ipsa impedit aspernatur ipsam sint elig
-        endi ab? Ad rerum debitis dolor fuga dolorem numquam amet expedita cum.</p>
+      <p data-aos="fade-up"  data-aos-duration="1000">I am a web developer based in Buenos Aires, Argentina, dedicated to build engaging web experiences. Alongside my current role, where I specialize in creating responsive and intuitive websites and web applications, I also undertake freelance projects.</p>
       </div>
   )
 }
