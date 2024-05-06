@@ -2,7 +2,7 @@
 
 .header-container{
     position: relative;
-    background-image: url(/assets/header_background13.png);
+    background-image: url(/assets/header_background15.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:30% 50%;
@@ -142,7 +142,7 @@
 
  @media screen and (max-width: 480px){
     .header-container{
-        background-position: 60% 80%;
+        background-position: 70% 80%;
         background-size:cover;
     }
     .header-container h1{
