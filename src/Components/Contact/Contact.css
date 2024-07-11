@@ -201,3 +201,16 @@
         margin-bottom: 2rem;
     }
 }
+
+.message-contact-container{
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 200px;
+    text-align: center;
+    background-color: green;
+    border-radius: 15px;
+}
+
+.message-contact{
+    color: white;
+}

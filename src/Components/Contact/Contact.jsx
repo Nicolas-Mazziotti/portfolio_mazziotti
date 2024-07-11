@@ -1,10 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useForm } from '../../hooks/useForm';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline'
 import './Contact.css'
 
 const Contact = () => {
-
+    const [messageSent, setMessageSent] = useState(false);
     const [copySuccess, setCopySuccess] = useState(null);
+    
+    const initialForm = {
+        userName : '',
+        email: '',
+        message: ''
+    }
+    const {formState, userName,email,message, onInputChange,resetForm } = useForm(initialForm)
+    // const {userName, email, password} = formState
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        console.log(formState)
+        setMessageSent(true)
+        resetForm()
+        setTimeout(() => {
+            setMessageSent(false);
+        }, 3000); 
+       
+    }
+    
     const copyToClipBoard = async copyMe => {
        try {
            await navigator.clipboard.writeText(copyMe);
@@ -53,24 +74,44 @@ const Contact = () => {
                 </div>                                                
             </div>
             <div className='contact-form-container'>
-                <form action="">
+                <form onSubmit={onSubmit}>
                     <div className='form-control'>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" name="" id="input_name"/> 
+                        <input 
+                        type="text" 
+                        name="userName" 
+                        id="input_name"
+                        value={userName}
+                        onChange={onInputChange}/> 
                     </div>
                      <div className='form-control'>
-                        <label htmlFor="name" className='label-email'>Email:</label>
-                        <input type="text" name="" id="input_email" />
+                        <label htmlFor="email" className='label-email'>Email:</label>
+                        <input 
+                        type="text" 
+                        name="email" 
+                        id="input_email"
+                        value={email}
+                        onChange={onInputChange} />
                      </div>
                      <div className='form-control'>
-                         <label htmlFor="name" className='label-message'>Message:</label>
-                         <textarea name="" id="input_message" cols="30" rows="10"></textarea>                        
+                         <label htmlFor="message" className='label-message'>Message:</label>
+                         <textarea 
+                         name="message" 
+                         id="input_message" 
+                         cols="30" 
+                         rows="10"
+                         value={message}
+                        onChange={onInputChange}>
+                            </textarea>                        
                         {/* <input type="text" name="" id="input_message" /> */}
                      </div>
                      <div className='contact-btn-container'>
-                        <button>Send message</button>
-                     </div>                                        
+                     {messageSent && <div className='message-contact-container'><p className='message-contact'>Mensaje Enviado</p></div> } 
+                       <button type='submit'>Send message</button>  
+                     </div>    
+                                                        
                 </form>
+                
             </div>
             </div>           
         </div>
