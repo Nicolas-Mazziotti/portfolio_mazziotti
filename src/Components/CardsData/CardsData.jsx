@@ -55,7 +55,7 @@ export const cards = [
         id: 6,
         title: "Demo Store | Freelance",
         subtitle: "WORDPRESS | WOOCOMERCE",
-        url: "https://solvantechdemostorecom/",
+        url: "https://solvantechdemostore.com/",
         img: portfolio_demostore,
         alt: "solvantech",
         className: 'without-icon'
