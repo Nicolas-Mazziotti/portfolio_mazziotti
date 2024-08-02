@@ -2,17 +2,20 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHtml5, faCss3, faJava, faReact, faNode,} from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 
 import "./Skills.css";
 
 const Skills = () => {
+
+  const {t} = useTranslation()
   useEffect(() => {
     AOS.init();
   }, []);  
   return (
     <div className="skills-container" id="skills">
       <div className="skills-title-container">
-        <h1 data-aos="fade-up" data-aos-duration="1000">SKILLS</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">{t('skills.title')}</h1>
         <div data-aos="fade-up" data-aos-duration="1000"></div>
       </div>
       <div className="skills-icons" data-aos="fade-up">

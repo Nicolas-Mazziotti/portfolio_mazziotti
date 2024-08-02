@@ -1,9 +1,12 @@
 import { UserIcon, CheckCircleIcon, BookOpenIcon, EnvelopeIcon, Bars3Icon, XMarkIcon, HomeIcon } from '@heroicons/react/24/outline'
 import './Navbar.css'
+import LanguageButtons from '../LanguageButtons/LanguageButtons'
+import { useTranslation } from 'react-i18next'
 // import { useState } from 'react'
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({toggleMenu, menuOpen}) => {
+  const {t} = useTranslation()
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId)
@@ -16,12 +19,11 @@ const Navbar = ({toggleMenu, menuOpen}) => {
   }
   return (
     <>
+    <LanguageButtons/>
     <div onClick={toggleMenu}className='container-menu-icon'>
       {
         menuOpen ? <XMarkIcon/> :  <Bars3Icon/> 
-      }
-      
-      
+      }            
       </div> 
       <div className={`navbar-container ${menuOpen ? 'open' : 'close'}`}>             
            <ul>
@@ -31,11 +33,11 @@ const Navbar = ({toggleMenu, menuOpen}) => {
               </li>
               <li onClick={() => scrollToSection("about")}>
                 <UserIcon className="navbar-icons"/>
-                <span className={'hidden-span'}>About</span>         
+                <span className={'hidden-span'}>{t('navbar.about')}</span>         
               </li>
               <li onClick={() => scrollToSection("skills")}>
                 <CheckCircleIcon className="navbar-icons"/>
-                <span className='hidden-span'>Skills</span>
+                <span className='hidden-span'>{t('navbar.skills')}</span>
               </li>
               <li onClick={() => scrollToSection("portfolio")}>
               <BookOpenIcon className="navbar-icons"/>
@@ -43,7 +45,7 @@ const Navbar = ({toggleMenu, menuOpen}) => {
               </li>
               <li onClick={() => scrollToSection("contact")}>
               <EnvelopeIcon className="navbar-icons"/>
-                <span className='hidden-span'>Contact</span>
+                <span className='hidden-span'>{t('navbar.contact')}</span>
               </li>
       </ul>
  </div>

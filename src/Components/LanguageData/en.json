@@ -1,0 +1,19 @@
+{
+    "header.subtitle": "I am a",
+    "header.role1":"Frontend Web Developer",
+    "navbar.about": "About",
+    "navbar.skills" : "Skills",
+    "navbar.contact" : "Contact",
+    "about.title" : "ABOUT ME",
+    "about.subtitle" : "I am a frontend web developer based in Buenos Aires, Argentina, dedicated to build engaging web experiences. Alongside my current role, where I specialize in creating responsive and intuitive websites and web applications, I also undertake freelance projects.",
+    "skills.title" : "SKILLS",
+    "contact.title" : "CONTACT",
+    "contact.location" : "Location",
+    "contact.message": "Message",
+    "contact.phone": "Phone",
+    "contact.form.name": "Name",
+    "contact.form.email": "Email",
+    "contact.form.message": "Message",
+    "contact.form.message.send": "Message sent",
+    "contact.form.button": "Send Message"
+ }

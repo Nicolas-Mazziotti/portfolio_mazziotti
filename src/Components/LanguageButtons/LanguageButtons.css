@@ -1,0 +1,27 @@
+.language-buttons-container{
+    position: absolute;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.language-buttons-container button {
+    color: white;
+    background-color: transparent;
+    border-radius: 15%;    
+    padding: 0.3rem;
+    border: solid black 1px;
+}
+
+.language-buttons-container button:hover {
+    color: black;
+}
+
+.btn-english{
+    margin-right: 0.2rem;
+}
+
+@media screen and (max-width: 925px){
+    .language-buttons-container{
+        margin-left: 5rem;
+    }
+}

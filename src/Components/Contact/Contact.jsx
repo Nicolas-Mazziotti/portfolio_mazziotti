@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useForm } from '../../hooks/useForm';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline'
+import { useTranslation } from 'react-i18next';
 import './Contact.css'
 
 const Contact = () => {
     const [messageSent, setMessageSent] = useState(false);
     const [copySuccess, setCopySuccess] = useState(null);
     
+    const {t} = useTranslation()
+
     const initialForm = {
         userName : '',
         email: '',
@@ -41,7 +44,7 @@ const Contact = () => {
     return (
         <div className='contact-container' id='contact'>
             <div>
-            <h1 data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000">{t('contact.title')}</h1>
             <div className='contact-title-underline' data-aos="fade-up" data-aos-duration="1000"></div>
                 </div>            
             
@@ -50,14 +53,14 @@ const Contact = () => {
                 <div className='contact-icons-details'>
                 <MapPinIcon className='icon'/>
                     <div>
-                        <h3>Location</h3>
+                        <h3>{t('contact.location')}</h3>
                         <p>Buenos Aires, Argentina</p>
                     </div>
                 </div>
                 <div className='contact-icons-details'>
                 <EnvelopeIcon className='icon'/>                
                     <div>
-                        <h3>Message</h3>
+                        <h3>{t('contact.message')}</h3>
                         <div className='email-contact-container'>
                         <p>nicolas.mazziotti1@gmail.com</p>
                         <span onClick={() => copyToClipBoard('nicolas.mazziotti1@gmail.com')}><DocumentDuplicateIcon/></span>
@@ -68,7 +71,7 @@ const Contact = () => {
                 <div className='contact-icons-details'>
                 <PhoneIcon className='icon'/>
                     <div>
-                        <h3>Phone</h3>
+                        <h3>{t('contact.phone')}</h3>
                         <p>+ 54-9-1134184792</p>
                     </div>
                 </div>                                                
@@ -76,7 +79,7 @@ const Contact = () => {
             <div className='contact-form-container'>
                 <form onSubmit={onSubmit}>
                     <div className='form-control'>
-                        <label htmlFor="name">Name:</label>
+                        <label htmlFor="name">{t('contact.form.name')}:</label>
                         <input 
                         type="text" 
                         name="userName" 
@@ -94,7 +97,7 @@ const Contact = () => {
                         onChange={onInputChange} />
                      </div>
                      <div className='form-control'>
-                         <label htmlFor="message" className='label-message'>Message:</label>
+                         <label htmlFor="message" className='label-message'>{t('contact.form.message')}:</label>
                          <textarea 
                          name="message" 
                          id="input_message" 
@@ -102,12 +105,12 @@ const Contact = () => {
                          rows="10"
                          value={message}
                         onChange={onInputChange}>
-                            </textarea>                        
+                        </textarea>                        
                         {/* <input type="text" name="" id="input_message" /> */}
                      </div>
                      <div className='contact-btn-container'>
-                     {messageSent && <div className='message-contact-container'><p className='message-contact'>Mensaje Enviado</p></div> } 
-                       <button type='submit'>Send message</button>  
+                     {messageSent && <div className='message-contact-container'><p className='message-contact'>{t('contact.form.message.send')}</p></div> } 
+                       <button type='submit'>{t('contact.form.button')}</button>  
                      </div>    
                                                         
                 </form>

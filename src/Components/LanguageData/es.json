@@ -1,0 +1,21 @@
+{
+    "header.subtitle": "Soy",
+    "header.role1" : "Desarrollador Web Frontend",
+     "navbar.home": "Inicio",
+     "navbar.about": "Sobre mi",
+    "navbar.skills" : "Habilidades",
+    "navbar.contact" : "Contacto",
+    "about.title" : "SOBRE MI",
+    "about.subtitle" : "Soy un desarrollador web frontend de Buenos Aires, Argentina, dedicado a desarrollar experiencias web atractivas. Además de mi rol actual, en el que me especializo en crear sitios web y aplicaciones web responsivas e intuitivas, también realizo proyectos freelance.",
+    "skills.title" : "HABILIDADES",
+    "portfolio.richard": "Crud Sistema de Presupuestos",
+    "contact.title" : "CONTACTO",
+    "contact.location" : "Ubicación",
+    "contact.message": "Mensaje",
+    "contact.phone": "Teléfono",
+    "contact.form.name": "Nombre",
+    "contact.form.email": "Email",
+    "contact.form.message": "Mensaje",
+    "contact.form.message.send": "Mensaje Enviado",
+    "contact.form.button": "Enviar mensaje"
+ }
